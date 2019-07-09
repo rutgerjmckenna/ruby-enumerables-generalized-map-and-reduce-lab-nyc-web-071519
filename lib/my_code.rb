@@ -8,7 +8,7 @@ def map(array)
   return new_array
 end
 
-def reduce(source_array)
+def reduce(s, sp)
   running_total = 0
   i = 0
   while i < source_array.length
