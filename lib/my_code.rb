@@ -8,10 +8,11 @@ def map(array)
   return new_array
 end
 
-def reduce(s, sp)
-  running_total = 0
-  i = 0
-  while i < source_array.length
+def reduce(source_array, starting_point = nil)
+  if starting_point
+    running_total = starting_point
+    i = 0
+    while i < source_array.length
   #running_total << yield (source_array[i])
   i += 1
   end
